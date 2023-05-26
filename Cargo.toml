@@ -1,0 +1,10 @@
+[package]
+name = "dtmfdetector"
+version = "0.1.0"
+edition = "2021"
+crate-type = ["cdylib"]
+
+[dependencies]
+dtmf = {git = "https://gitlab.com/SnejUgal/dtfm"}
+pyo3 = { version = "0.18.3", features = ["extension-module"] }
+rodio = "0.17.1"
