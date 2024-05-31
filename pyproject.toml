@@ -1,26 +1,15 @@
-[tool.poetry]
-name = "dtmfdetector"
-version = "0.1.0"
-description = "a dtmf detector written in rustedpython"
-authors = ["denizsincar"]
-readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.11"
-
-[tool.poetry.dev-dependencies]
-maturin = "^1.0.0"
-
 [build-system]
-requires = ["maturin>=0.13,<0.14"]
+requires = ["maturin>=1.5,<2.0"]
 build-backend = "maturin"
 
 [project]
 name = "dtmfdetector"
-version = "0.1.0"
-description = "a dtmf detector written in rustedpython"
+requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Rust",
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
+dynamic = ["version"]
+[tool.maturin]
+features = ["pyo3/extension-module"]

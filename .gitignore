@@ -1,13 +1,17 @@
 /target
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
+.pytest_cache/
 *.py[cod]
 
 # C extensions
 *.so
-*.pyd
 
 # Distribution / packaging
+.Python
+.venv/
+env/
 bin/
 build/
 develop-eggs/
@@ -18,6 +22,9 @@ lib64/
 parts/
 sdist/
 var/
+include/
+man/
+venv/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -25,8 +32,10 @@ var/
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+pip-selfcheck.json
 
 # Unit test / coverage reports
+htmlcov/
 .tox/
 .coverage
 .cache
@@ -48,5 +57,16 @@ coverage.xml
 *.log
 *.pot
 
+.DS_Store
+
 # Sphinx documentation
 docs/_build/
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# Pyenv
+.python-version

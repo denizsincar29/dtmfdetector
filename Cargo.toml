@@ -2,9 +2,13 @@
 name = "dtmfdetector"
 version = "0.1.0"
 edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "dtmfdetector"
 crate-type = ["cdylib"]
 
 [dependencies]
-dtmf = {git = "https://gitlab.com/SnejUgal/dtfm"}
-pyo3 = { version = "0.18.3", features = ["extension-module"] }
+pyo3 = "0.20.0"
 rodio = "0.17.1"
+dtmf = {git = "https://gitlab.com/SnejUgal/dtfm"}
